@@ -31,5 +31,15 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
     "lint-staged": "^7.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": "10.9.0",
+    "npm": "*",
+    "yarn": ">=1.7"
   }
 }
