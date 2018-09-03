@@ -15,13 +15,14 @@ module.exports = {
   ],
   // required to lint *.vue files
   plugins: [
-    'vue'
+    'vue',
+    'prettier',
   ],
   // add your custom rules here
   rules: {
     "semi": [2, "never"],
     "no-console": "off",
     "vue/max-attributes-per-line": "off",
-    "prettier/prettier": ["error", { "semi": false }]
+    "prettier/prettier": ["error", { "semi": false, "trailingComma": "es5", "singleQuote": true }]
   }
 }
