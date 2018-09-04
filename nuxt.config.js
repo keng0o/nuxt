@@ -1,4 +1,8 @@
 module.exports = {
+  env: {
+    ENDPOINT: process.env.ENDPOINT || 'http://localhost:3000',
+  },
+
   /*
   ** Headers of the page
   */
@@ -53,4 +57,15 @@ module.exports = {
       ],
     },
   },
+
+  modules: [
+    [
+      '@nuxtjs/apollo',
+      {
+        clientConfigs: {
+          default: '@/apollo/index.js',
+        },
+      },
+    ],
+  ],
 }

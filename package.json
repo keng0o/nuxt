@@ -14,6 +14,13 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc1",
+    "apollo-cache-inmemory": "^1.2.9",
+    "apollo-link": "^1.2.2",
+    "apollo-link-batch-http": "^1.2.2",
+    "apollo-link-context": "^1.0.8",
+    "cookie": "^0.3.1",
+    "graphql-tag": "^2.9.2",
     "nuxt": "1.4.2",
     "sanitize.css": "^7.0.1"
   },
@@ -23,6 +30,9 @@
       "git add"
     ]
   },
+  "resolutions": {
+    "vue-apollo": "3.0.0-beta.16"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-do-expressions": "^7.0.0",
@@ -31,8 +41,8 @@
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
-    "babel-eslint": "^9.0.0",
     "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
     "commitizen": "^2.10.1",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
@@ -59,6 +69,6 @@
   "engines": {
     "node": "10.9.0",
     "npm": "*",
-    "yarn": ">=1.7"
+    "yarn": ">=1.9"
   }
 }
