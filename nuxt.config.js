@@ -11,6 +11,8 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  css: ['sanitize.css/sanitize.css', '@/assets/styles/main.scss'],
+
   /*
   ** Customize the progress bar color
   */
@@ -34,6 +36,21 @@ module.exports = {
           },
         })
       }
+    },
+
+    babel: {
+      presets: [
+        'vue-app',
+        // '@babel/plugin-proposal-export-default-from',
+        // '@babel/plugin-proposal-logical-assignment-operators',
+        // ['@babel/plugin-proposal-optional-chaining', { loose: false }],
+        // ['@babel/plugin-proposal-pipeline-operator', { proposal: 'minimal' }],
+        // [
+        //   '@babel/plugin-proposal-nullish-coalescing-operator',
+        //   { loose: false },
+        // ],
+        // '@babel/plugin-proposal-do-expressions',
+      ],
     },
   },
 }
