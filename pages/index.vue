@@ -24,10 +24,18 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import Home from '@/graphql/Home.graphql'
 
 export default {
   components: {
     AppLogo,
+  },
+
+  async created() {
+    await this.$apollo.query({
+      query: Home,
+      variables: {},
+    })
   },
 }
 </script>
