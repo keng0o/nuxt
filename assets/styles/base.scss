@@ -7,6 +7,7 @@
 }
 
 * {
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
@@ -16,6 +17,9 @@ html, body {
   overflow-x: hidden;
   font-family: $font-primary;
   font-size: 62.5%;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
