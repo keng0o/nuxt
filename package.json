@@ -22,7 +22,8 @@
     "cookie": "^0.3.1",
     "graphql-tag": "^2.9.2",
     "nuxt": "1.4.2",
-    "sanitize.css": "^7.0.1"
+    "sanitize.css": "^7.0.1",
+    "vue-grid-layout": "^2.1.13"
   },
   "lint-staged": {
     "*.{js,vue}": [
