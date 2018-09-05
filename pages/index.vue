@@ -5,8 +5,8 @@
         <nuxt-link :to="{}">
           <img
             :src="Logo"
-            width="100"
-            height="100"
+            width="70"
+            height="70"
           >
         </nuxt-link>
       </div>
@@ -108,7 +108,7 @@ export default {
 }
 
 .header {
-  height: 100px;
+  height: 70px;
   display: flex;
   padding: 0 40px;
 
