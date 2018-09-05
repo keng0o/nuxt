@@ -31,11 +31,11 @@ export default {
     AppLogo,
   },
 
-  async created() {
-    await this.$apollo.query({
+  apollo: {
+    allUsers: {
       query: Home,
-      variables: {},
-    })
+      loadingKey: 'loading',
+    },
   },
 }
 </script>
